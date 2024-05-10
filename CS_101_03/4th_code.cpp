@@ -14,24 +14,25 @@ int factorial(int n)  //function for factorial
     }
 }
 
-int main() {
+int main() 
+{
     int N, r;
     
-    cout << "Enter your N ";
-    cin >> N;                // take input from user
+    cout <<"Enter your N ";
+    cin>>N;                // take input from user
     
-    cout << "Enter r ";
-    cin >> r;
+    cout<<"Enter r ";
+    cin>>r;
 
     if (r > N)
 	 {
-        cout << "Invalid input(r is never greater than N)";
+        cout<<"Invalid input(r is never greater than N)";
     }
 	 else 
 	 {
         int x = factorial(N) / factorial(N - r); //we use factorial function
         
-        cout << "The permutation " << N << "P" << r << " is: " << x;
+        cout<<"The permutation " << N << "P" << r << " is: " << x;
     }
     return 0;
 }
