@@ -94,11 +94,7 @@ int main()
     }
     cout << endl;
     
-    // Free allocated memory
-    delete[] arr1;
-    delete[] arr2;
-    delete[] s_u;
-    delete[] s_i;
+
     
     return 0;
 }
