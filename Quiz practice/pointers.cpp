@@ -1,12 +1,19 @@
 #include<iostream>
+
 using namespace std;
+
 int main()
 {
-      int var1;
-      char var2[10];
-      cout<<"Adress of Var1 "<<endl;
-      cout<< &var1 <<endl;
-      cout<<"Adress of Var2 "<<endl;
-      cout<< &var1 <<endl;
-      return 0;
+	int arr[2]={5,9};
+	
+	int *ptr= &arr[0];
+	
+	cout<<ptr<<"  "<<*ptr<<endl<<"\n";
+	
+	cout<<*++ptr<<"  " <<ptr<<endl<<"\n"; //it will update the adress(here 4 bytes will be add) and print value at updates adress
+	
+	cout<<arr[0]<<" "<<arr[1]<<endl<<"\n"; //no effect will be on elements
+	
+	cout<<ptr<<" "<<*ptr<<endl; //here give us updated adress and value at that adress
+	
 }
