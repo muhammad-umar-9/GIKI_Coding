@@ -1,6 +1,6 @@
 #include <iostream>
 using namespace std;
-
+static int x =0;
 class Base {
 	int _x;
 public:
